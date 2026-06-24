@@ -11,6 +11,15 @@ runs normally; it just can't update itself.
 > ⚠️ Use on hardware you own. Blocking `gvt1`/`gvt2` also blocks Play **app** updates. This is a
 > DNS-level mitigation, not a guarantee for every firmware. No warranty.
 
+> 🧹 **Already past setup and just want to stop updates + remove bloat on the device itself?**
+> See **[DEBLOAT.md](DEBLOAT.md)** — a separate, **no-root, USB-only** toolkit
+> (`onn-adb-connect.sh` + `onn-debloat.sh`) that disables the on-device updaters and strips
+> bloatware via ADB. Fully reversible. It does **not** need this hotspot.
+
+> 🔓 **Want full root?** See **[ROOT.md](ROOT.md)** + `onn-root.sh` — a Magisk root for the
+> YOC over USB (handles the lz4-legacy `vendor_boot` quirk, verifies + backs up, one-command
+> rollback). **⚠️ HIGH RISK, entirely your choice — can brick the device. Read the warnings.**
+
 ## How it works
 
 1. **NetworkManager "shared" hotspot** on the laptop → DHCP + DNS (dnsmasq) + NAT for the device.

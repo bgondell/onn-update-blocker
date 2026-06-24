@@ -13,3 +13,12 @@ local/
 # Runtime artifacts (in case anyone copies them into the repo)
 *.leases
 *.log
+
+# per-user debloat change logs
+logs/
+
+# per-user root artifacts (large OTA zips, boot images)
+root-work/
+*.img
+*.apk
+ota*.zip
