@@ -19,6 +19,9 @@ runs normally; it just can't update itself.
 > 🔓 **Want full root?** See **[ROOT.md](ROOT.md)** + `onn-root.sh` — a Magisk root for the
 > YOC over USB (handles the lz4-legacy `vendor_boot` quirk, verifies + backs up, one-command
 > rollback). **⚠️ HIGH RISK, entirely your choice — can brick the device. Read the warnings.**
+> Prebuilt stock + Magisk-patched images for **one exact build** are in
+> **[onn-root/](onn-root/)** — they worked on that unit and **may brick a different
+> model/build**; read [onn-root/README.md](onn-root/README.md) before using them.
 
 ## How it works
 

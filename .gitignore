@@ -17,8 +17,8 @@ local/
 # per-user debloat change logs
 logs/
 
-# per-user root artifacts (large OTA zips, boot images)
+# per-user root work dir (a fresh ~766MB OTA + extracted images per run).
+# The vetted, device-specific images we DO ship live in onn-root/ (committed).
 root-work/
-*.img
-*.apk
 ota*.zip
+payload.bin
