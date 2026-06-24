@@ -93,7 +93,7 @@ versions may work but the lz4 workaround is matched to 26.x `boot_patch.sh`.
 ./onn-adb-connect.sh                 # authorize on the TV
 
 # root (pass your exact-build stock image + Magisk apk)
-./onn-root.sh --vendor-boot stock/vendor_boot.img --magisk Magisk-v26.1.apk
+./onn-root.sh --vendor-boot vendor_boot.img --magisk Magisk-v26.1.apk
 #   ...or extract from a full OTA automatically:
 ./onn-root.sh --ota /path/to/OTA.zip --magisk Magisk-v26.1.apk
 ```

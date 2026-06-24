@@ -103,8 +103,9 @@ preloads too. Nothing is applied until you confirm the final list.
   **root**.
 
 So this toolkit gives you the **strongest possible non-root, device-side block**. If you
-need a 100% guarantee against a *manual* update too, that requires rooting the device
-(out of scope here).
+need a 100% guarantee against a *manual* update too, that requires **root** — with root you
+can disable the GMS `.update.*` components directly, and a Magisk-modified `vendor_boot`
+breaks A/B OTA outright. See **[ROOT.md](ROOT.md)** (⚠️ high risk — read the warnings).
 
 ---
 
