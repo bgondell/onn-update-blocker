@@ -141,5 +141,12 @@ removes Magisk entirely. (`disable-user`/debloat changes also clear on reset.)
 - This was validated on **YOC / `SGZ3.231226.096.A1` / Android 12 / armeabi-v7a**.
   Other builds differ; always use **your** build's stock image.
 
+## Credits
+Built on the groundwork in the XDA thread
+**[\[Guides\] 2023 Walmart ONN Google TV (4K YOC)](https://xdaforums.com/t/guides-2023-walmart-onn-google-tv-4k-yoc.4610749/)**
+— the bootloader-unlock and vendor_boot-patching knowledge for this device comes
+from that community. This repo adds the lz4-legacy ramdisk fix, the on-device
+(no-file-picker) CLI patch, and the verify/back-up automation.
+
 ## License
 MIT. No warranty. You root at your own risk, by your own choice.

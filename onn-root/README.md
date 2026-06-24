@@ -28,13 +28,20 @@
 
 | File | What it is | SHA-256 |
 |---|---|---|
-| `stock-SGZ3.231226.096.A1/vendor_boot.img` | **Stock** vendor_boot (recovery lifeline) | `27481be4…88a76c4` |
-| `stock-SGZ3.231226.096.A1/boot.img` | Stock boot (reference) | `5ca601db…d457af63` |
-| `vendor_boot-magisk_patched.img` | Magisk-26.1-patched vendor_boot **(rooted this device)** | `5ba9ed0b…157658b5` |
-| `Magisk-v26.1.apk` | The exact Magisk version used | `ae1a02b1…f705dccb` |
+| `stock-SGZ3.231226.096.A1/vendor_boot.img` | **Stock** vendor_boot — the recovery lifeline | `27481be4…88a76c4` |
+| `vendor_boot-magisk_patched.img` | Magisk-26.1-patched vendor_boot — **convenience only** | `5ba9ed0b…157658b5` |
+| `Magisk-v26.1.apk` | The exact Magisk version used (also at the [official release](https://github.com/topjohnwu/Magisk/releases/tag/v26.1)) | `ae1a02b1…f705dccb` |
 
-The stock images were extracted from the build's full OTA:
+The stock `vendor_boot` was extracted from this build's full OTA:
 `https://android.googleapis.com/packages/ota-api/package/070579547986cd91f559b421ff80a1993f22249c.zip`
+
+> ### On the patched image
+> The recommended path is to **make your own** with `../onn-root.sh` (it verifies
+> everything and backs up your stock first). The prebuilt
+> `vendor_boot-magisk_patched.img` is a **convenience** — if you use it, confirm
+> its SHA-256 above and that your build is **byte-for-byte this one**. A prebuilt
+> patched image is the easiest way to brick a device; the **stock** image + the
+> method are what age well.
 
 ## Use (this device only)
 
