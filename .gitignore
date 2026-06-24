@@ -1,0 +1,15 @@
+# Editor / OS cruft
+*~
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+
+# Local copies that may contain your real SSID / password / VPN details
+*.local.sh
+local/
+
+# Runtime artifacts (in case anyone copies them into the repo)
+*.leases
+*.log
